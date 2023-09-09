@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ /* font-family: 'Bitter', serif; */
+ /* #FBAE2C     rgb(251, 174, 44)  ORANGE
+#B683BA      rgb(182, 131, 186)  LIGHT LAVENDER
+#A858A3    rgb(168, 88, 163)  DARK LAVENDER
+#0263AE    rgb(173, 169, 130)  DARK TAN
+#D8D5BC   rgb(2, 99, 174)  DARK BLUE
+#F9E482   rgb(249, 228, 130)  LIGHT YELLOW
+#BFBFBF rgb(191, 191, 191) LIGHT GRAY
+#414042    rgb(65, 64, 66)  DARK GRAY */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: #414042;
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 960px;
+    margin: auto;
+}
+header{
+    background-image: url('../img/main_back.jpg');
+    height: 388px;
+    position: relative;
+}
+nav{
+    background: #00000056;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+    list-style-type: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 45px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ul li a:hover{
+        color: #FBAE2C;
+}
+header h1 a{
+    position: absolute;
+    background-image: url('../img/ralogo.png');
+    height: 150px;
+    width: 150px;
+    background-color: black;
+}
+header p{
+    color: white;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 40px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding: 50px 12px;
+    font-weight: 600;
+    background: #00000056;
+    font-family: 'Bitter', serif;
+    line-height: 1.6;
+}
+header p span:nth-child(1){
+    color: #FBAE2C;
+}
+header p span:nth-child(2){
+    color: #A858A3;
+}
+header p span:nth-child(3){
+    color: #0263ae;
+}
+header p a{
+    color: #F9E482;
+}
+
+/* featuers-posts */
+
+
+section.featuers-posts{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+}
+.featuers-posts div{
+    overflow: hidden;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 308px;
+    width: 33.33%;
+    padding-bottom: 20px;
+
+}
+.featuers-posts div:hover{
+    height: auto;
+    transition: 0.75s ease;
+}
+.featuers-posts div h1{
+    background-image: url("../img/diag_pattern.png");
+    padding: 10px 0.6em;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+.featuers-posts div p{
+    margin: 30px 10px 0px 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.featuers-posts div a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 7px 15px;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+
+.featuers-posts div ul{
+    margin-top: 30px;
+}
+.featuers-posts div ul li .date{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: block;
+}
+.featuers-posts div ul li {
+    padding: 10px;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+}
+.featuers-posts .post-1{
+    background: #A858A3;
+}
+.featuers-posts .post-2{
+    background: #FBAE2C;
+}
+.featuers-posts .post-3{
+    background: #0263ae;
+}
+
+
+/* main-contener */
+
+.main-contener{
+    width: 100%;
+    display: flex;
+}
+.articel{
+    width: 66.66%;
+    margin: 2px;
+    background: white;
+    text-align: left;
+    padding: 20px;
+
+}
+.articel h2{
+    font-size: 25px;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    margin: 5px 0;
+    clear: both;
+}
+.articel p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+    word-spacing: 2px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.articel a{
+    float: right;
+    color: #0263ae;
+    display: block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.sidebar{
+    width: 33.33%;
+}
+.sidebar .posts-1{
+    overflow: hidden;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 308px;
+    background: #FBAE2C;
+    padding-bottom: 20px;
+
+}
+.sidebar .posts-2{
+    overflow: hidden;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #A858A3;
+    padding-bottom: 20px;
+
+}
+.sidebar div p{
+    margin: 30px 10px 0px 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.sidebar div:hover{
+    height: auto;
+    transition: 0.75s ease;
+}
+.sidebar div h1{
+    background-image: url("../img/diag_pattern.png");
+    padding: 10px 0.6em;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+.sidebar div:nth-child(1) a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 7px 15px;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+.main-icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px 0 20px;
+}
+
+.posts-3{
+    background: #0263ae;
+    margin: 2px;
+
+}
+.main-posts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 10px;
+}
+.main-posts a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* main-fotter */
+
+footer {
+    background: #F9E482;
+    width: 100%;
+    margin: 0 2px;
+    padding: 20px 0;
+}
+footer .row-1{
+
+    display: flex;
+    justify-content: center;
+}
+
+footer .row-1 .col{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 2px solid #BFBFBF;
+    gap: 10px;
+}
+footer .row-1 .col h3{
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    color: #414042;
+    font-size: 18px;
+}
+footer .row-1 .col .footer-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;    
+}
+footer .row-1 .col .footer-data ul{
+    list-style-type: none;
+    padding: 0 20px;
+}
+footer .row-1 .col .footer-data ul li a{
+    color: #414042;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 20px;
+}
+footer .row-2{
+    font-size: 11px;
+    margin-top: 15px;
+    color: #414042;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .row-2 p a{
+    text-decoration: underline;
+    color: #414042;
+}
